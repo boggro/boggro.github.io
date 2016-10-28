@@ -1,0 +1,7 @@
+<div role="button" id="{{sound._id}}_{{$index + 1}}" class="audioWrap" ng-click="main.play($event)" data-src="{{file.new ? sound.path + file.file + '.mp3' : sound.path + file + '.mp3'}}" ng-repeat="file in sound.files">
+	<span class="fileName ya">{{file.new ? file.file : file}}</span>
+	<span class="{{file.new ? 'new' : 'hidden'}}">NEW</span>
+	<audio class="{{sound._id}}_{{$index + 1}}" ng-src="{{file.new ? sound.path + file.file + '.mp3' : sound.path + file + '.mp3'}}" preload="auto"></audio>
+	<div class="{{sound._id}}_{{$index + 1}} progress"></div>
+	<div class="{{sound._id}}_{{$index + 1}} icon"></div>
+</div>

@@ -1,0 +1,193 @@
+@font-face{
+	font-family: 'yaBold';
+	src: url('../fonts/yaBold.woff');
+}
+@font-face{
+	font-family: 'NotoSansKR-Bold-Hestia';
+	src: url('../fonts/NotoSansKR-Bold-Hestia.woff');
+}
+
+.noto{
+	font-family: 'NotoSansKR-Bold-Hestia', sans-serif;
+}
+.ya{
+	font-family: 'yaBold', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+body{
+	color: #5D5D5D;
+}
+#wrap{
+	width: 300px;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	min-height: 80px;
+	position: relative;
+	height: auto;
+}
+#header{
+	background: url('../images/Pikachu_vector_by_paperjoey-d3919s82.png') no-repeat center top;
+	width: 100%;
+	height: 350px;
+	display: none;
+}
+#header_min{
+	line-height: 80px;
+	font-size: 30px;
+}
+#linkWrap{
+	position: absolute;
+	top:0;
+	right: 0;
+}
+#youtube, #potsunet{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border-radius: 5px;
+}
+#youtube{
+	background: url('../images/youtube.png') center / cover;
+}
+#potsunet{
+	background: url('../images/potsu.png') center / cover;	
+}
+
+article{
+	margin-top: 10px;
+}
+article:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+section{
+	width: 100%;
+	margin-bottom: 50px;
+}
+section:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+h2{
+	border-bottom: 2px solid #5D5D5D;
+	margin-bottom: 10px;
+}
+h2:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+h2>span{
+	vertical-align: middle;
+	float: right;
+}
+.audioWrap{
+	display: inline-block;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	line-height: 140px;
+	text-align: center;
+	background: #FFFF6C;
+	border: 5px solid white;
+	overflow: hidden;
+	color: white;
+	font-weight: bold;
+	float: left;
+}
+.new{
+	position: absolute;
+	display: inline-block;
+	line-height: 10px;
+	right: 0;
+	top: 10px;
+	font-size: 8px;
+	color: #F15F5F;
+	transform: rotate(20deg);
+}
+.fileName{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 30px;
+	font-size: 30px;
+	width: 90%;
+	color: #5D5D5D;
+}
+.audioWrap:hover{
+	border: 0;
+}
+.progress{
+	width: 150px;
+	height: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-radius: 0;
+	background-color: red;
+	opacity: 0.2;
+	margin-bottom: 0;
+}
+.icon{
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.3;
+}
+.play{
+	background: url('../images/icon_play.png') center / cover;
+}
+.pause{
+	background: url('../images/icon_pause.png') center / cover;
+}
+
+footer{
+	text-align: center;
+	border-top: 1px solid black;
+	line-height: 50px;
+}
+
+.panel-collapse{
+	overflow: hidden;
+}
+.panel-collapse:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+@media all and (min-width:450px){
+	#header{
+		display: inline-block;
+	}
+	#header_min{
+		display: none;
+	}
+	#wrap{
+		width: 600px;
+		min-width: 500px;
+	}
+}
+
+@media all and (min-width:980px){
+	#wrap{
+		width: 900px;
+		min-width: 500px;
+	}
+}

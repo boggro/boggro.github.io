@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko" ng-app="Boggro">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="keywords" content="boggro">
+	<meta name="description" content="bodeum's aggro compilation">
+	<title>BOGGRO</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+	<link rel="stylesheet" href="components/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body ng-controller="MainCtrl as main"	class="noto">
+	<div id="wrap">
+		<header>
+			<div id="header"></div>
+			<span id="header_min">BOGGRO</span>
+			<div id="linkWrap">
+				<!--<a id="youtube" href="https://www.youtube.com/channel/UCuj0y053Vhw_RRcgNP8hv7Q" target="_blank"><div></div></a>-->
+				<a id="youtube" href="#" onclick="return alert('없어졌어!')"><div></div></a>
+				<a id="potsunet" href="http://potsu.net/index.php?mid=bod" target="_blank"><div></div></a>
+			</div>
+		</header>
+		<article>
+			<section id="{{sound._id}}" ng-repeat="sound in sounds">
+				<h2 ng-click="main.collapse($event, $index)" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse_{{$index}}" aria-controls="collapse_{{$index}}">{{sound.title}}<span class="glyphicon glyphicon-triangle-bottom"></span></h2>
+				<div id="collapse_{{$index}}" class="panel-collapse collapse" role="tabpanel" data-sound="sound" data-cl="col" data-ready="isReady"data-main="main" template-url="contentUrl" coll></div>
+			</section>
+		</article>
+		<footer>
+			<span>깃허브 : </span><a href="https://github.com/bodeum/boggro" target="_blank">https://github.com/bodeum/boggro</a>
+		</footer>
+	</div>
+	<script src="scripts/google_analytics.js"></script>
+	<script src="components/jquery/jquery-3.1.1.min.js"></script>
+	<script src="components/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+	<script src="components/angular/angular.min.js"></script>
+	<script src="scripts/app.js"></script>
+</body>
+</html>
