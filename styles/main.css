@@ -13,6 +13,9 @@
 .ya{
 	font-family: 'yaBold', sans-serif;
 }
+.hal{
+	font-family: 'Gloria Hallelujah', cursive;
+}
 
 *{
 	margin: 0;
@@ -31,30 +34,32 @@ body{
 }
 header{
 	width: 100%;
-	min-height: 80px;
+	min-height: 40px;
 	position: relative;
-	height: auto;
+	margin-top: 10px;
+}
+header:after{
+	content: "";
+	display: block;
+	clear: both;
 }
 #header{
-	background: url('../images/Pikachu_vector_by_paperjoey-d3919s82.png') no-repeat center top;
-	width: 100%;
-	height: 350px;
-	display: none;
+	float: left;
 }
-#header_min{
-	line-height: 80px;
+#header>h1{
 	font-size: 30px;
+	letter-spacing: 2px;
+	margin: 0;
+	line-height: 40px;
+	text-indent: 20px;
 }
 #linkWrap{
-	position: absolute;
-	top:0;
-	right: 0;
+	float: right;
 }
 #youtube, #potsunet{
 	display: inline-block;
-	width: 80px;
-	height: 80px;
-	border-radius: 5px;
+	width: 40px;
+	height: 40px;
 }
 #youtube{
 	background: url('../images/youtube.png') center / cover;
@@ -96,9 +101,9 @@ h2>span{
 .audioWrap{
 	display: inline-block;
 	position: relative;
-	width: 150px;
-	height: 150px;
-	line-height: 140px;
+	width: 100px;
+	height: 100px;
+	line-height: 90px;
 	text-align: center;
 	background: #FFFF6C;
 	border: 5px solid white;
@@ -120,8 +125,8 @@ h2>span{
 .fileName{
 	display: inline-block;
 	vertical-align: middle;
-	line-height: 30px;
-	font-size: 30px;
+	line-height: 20px;
+	font-size: 20px;
 	width: 90%;
 	color: #5D5D5D;
 }
@@ -171,21 +176,52 @@ footer{
 	clear: both;
 }
 
-
-@media all and (min-width:450px){
+@media all and (min-width:480px){
 	#header{
-		display: inline-block;
+		background: url('../images/Pikachu_vector_by_paperjoey-d3919s82.png') no-repeat center top;
+		width: 100%;
+		height: 350px;
+		float: none;
 	}
-	#header_min{
-		display: none;
+	#header>h1{
+		font-size: 35px;
+		letter-spacing: 5px;
+		width: 100%;
+		height: auto;
+		position: absolute;
+		text-align: right;
+		bottom: 0;
+	}
+	#linkWrap{
+		position: absolute;
+		top:0;
+		right: 0;
+		float: none;
+	}
+	#youtube, #potsunet{
+		width: 80px;
+		height: 80px;
 	}
 	#wrap{
 		width: 600px;
 		min-width: 500px;
 	}
+	.audioWrap{
+		width: 150px;
+		height: 150px;
+		line-height: 140px;
+	}
+	.fileName{
+		font-size: 30px;
+		line-height: 30px;
+	}
 }
 
 @media all and (min-width:980px){
+	#header>h1{
+		font-size: 60px;
+		letter-spacing: 10px;
+	}
 	#wrap{
 		width: 900px;
 		min-width: 500px;
