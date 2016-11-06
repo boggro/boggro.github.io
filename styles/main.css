@@ -62,7 +62,7 @@ header:after{
 	height: 40px;
 }
 #youtube{
-	background: url('../images/youtube.png') center / cover;
+	background: url('../images/youtube.ico') center / cover;
 }
 #potsunet{
 	background: url('../images/potsu.png') center / cover;	
