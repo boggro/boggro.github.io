@@ -97,7 +97,15 @@ h2:after{
 	display: block;
 	clear: both;
 }
-h2>span{
+h2>span:first-child{
+	position: absolute;
+	display: inline-block;
+	line-height: 10px;
+	font-size: 8px;
+	color: #F15F5F;
+	transform: rotate(20deg);
+}
+h2>span:last-child{
 	vertical-align: middle;
 	float: right;
 }
@@ -178,6 +186,7 @@ footer{
 	display: block;
 	clear: both;
 }
+
 
 @media all and (min-width:480px){
 	#header{

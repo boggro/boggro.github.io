@@ -23,7 +23,7 @@
 		</header>
 		<article>
 			<section id="{{sound._id}}" ng-repeat="sound in sounds">
-				<h2 ng-click="main.collapse($event, $index)" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse_{{$index}}" aria-controls="collapse_{{$index}}">{{sound.title}}<span class="glyphicon glyphicon-triangle-bottom"></span></h2>
+				<h2 ng-click="main.collapse($event, $index)" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse_{{$index}}" aria-controls="collapse_{{$index}}">{{sound.title}}<span class="{{sound.new ? '' : 'hidden'}}">NEW</span><span class="glyphicon glyphicon-triangle-bottom"></span></h2>
 				<div id="collapse_{{$index}}" class="panel-collapse collapse" role="tabpanel" data-sound="sound" data-cl="col" data-ready="isReady"data-main="main" template-url="contentUrl" coll></div>
 			</section>
 		</article>
