@@ -1,19 +1,16 @@
 CACHE MANIFEST
-# 2016-11-04 23 37
+# 2016-11-19 11 50
 components/angular/angular.min.js
 components/bootstrap-3.3.7-dist/css/bootstrap.css
 components/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff
 components/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2
 components/jquery/jquery-3.1.1.min.js
-
 fonts/NotoSansKR-Bold-Hestia.woff
 fonts/yaBold.woff
-
 images/icon_pause.png
 images/icon_play.png
 images/potsu.png
-images/youtube.ico
-images/asked.png
+images/youtube.png
 images/Pikachu_vector_by_paperjoey-d3919s82.png
 
 sounds/boggro/그님랭.mp3
@@ -42,6 +39,8 @@ sounds/boggro/보스므르.mp3
 sounds/boggro/보카츄.mp3
 sounds/boggro/오빠야.mp3
 sounds/boggro/과한 애정 표현.mp3
+sounds/boggro/머머리 극딜.mp3
+sounds/boggro/머머리들 화이팅.mp3
 
 sounds/potba/팟빵 01.mp3
 sounds/potba/팟빵 02.mp3
@@ -65,6 +64,7 @@ sounds/piano/푸린.mp3
 sounds/piano/해피나루.mp3
 sounds/piano/히오스.mp3
 sounds/piano/수고했어.mp3
+sounds/piano/머머리 헌정곡.mp3
 
 sounds/botbox/보트박스 01.mp3
 sounds/botbox/보트박스 02.mp3
