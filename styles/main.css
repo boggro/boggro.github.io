@@ -187,6 +187,26 @@ footer{
 	clear: both;
 }
 
+/*snow fall*/
+#snowflakeContainer {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	pointer-events: none;
+}
+.snowflake {
+	padding-left: 15px;
+	font-family: Cambria, Georgia, serif;
+	font-size: 14px;
+	line-height: 24px;
+	position: fixed;
+	color: #B2EBF4;
+	user-select: none;
+	z-index: 1000;
+}
+.snowflake:hover {
+	cursor: default;
+}
 
 @media all and (min-width:480px){
 	#header{
