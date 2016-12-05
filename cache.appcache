@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2016-11-27 12 18
+# 2016-12-05 21 53
 components/angular/angular.min.js
 components/bootstrap-3.3.7-dist/css/bootstrap.css
 components/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff
@@ -41,6 +41,17 @@ sounds/boggro/오빠야.mp3
 sounds/boggro/과한 애정 표현.mp3
 sounds/boggro/머머리 극딜.mp3
 sounds/boggro/머머리들 화이팅.mp3
+sounds/boggro/길막 찡찡.mp3
+sounds/boggro/나한테 왜그래.mp3
+sounds/boggro/때릴꼬야.mp3
+sounds/boggro/맛있게 먹을게얀.mp3
+sounds/boggro/보듬이니깐요.mp3
+sounds/boggro/윽 일침맞아버리고.mp3
+sounds/boggro/직빵.mp3
+sounds/boggro/템주다가ㅏㅏㅏ으앙.mp3
+sounds/boggro/이빨에 고기꼈듬.mp3
+
+
 
 sounds/potba/팟빵 01.mp3
 sounds/potba/팟빵 02.mp3
