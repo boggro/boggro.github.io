@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2016-12-22
+# 2016-12-23
 components/angular/angular.min.js
 components/bootstrap-3.3.7-dist/css/bootstrap.css
 components/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff
@@ -80,6 +80,7 @@ sounds/piano/해피나루.mp3
 sounds/piano/히오스.mp3
 sounds/piano/수고했어.mp3
 sounds/piano/머머리 헌정곡.mp3
+sounds/piano/We wish you a merry Christmas.mp3
 
 sounds/botbox/보트박스 01.mp3
 sounds/botbox/보트박스 02.mp3
