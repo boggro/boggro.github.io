@@ -166,10 +166,16 @@ h2>span:last-child{
 	opacity: 0.3;
 }
 .play{
+	/* christmas update
 	background: url('../images/icon_play.png') center / cover;
+	*/
+	background: url('../images/b49.gif') center / cover;
 }
 .pause{
+	/* christmas update
 	background: url('../images/icon_pause.png') center / cover;
+	*/
+	background: url('../images/sadfrogsanta.png') center / cover;
 }
 
 footer{
@@ -209,6 +215,7 @@ footer{
 }
 
 @media all and (min-width:480px){
+	/* christmas update
 	#header{
 		background: url('../images/Pikachu_vector_by_paperjoey-d3919s82.png') no-repeat;
 		background-position: 30% 0;
@@ -225,6 +232,7 @@ footer{
 		text-align: right;
 		bottom: 0;
 	}
+	*/
 	#linkWrap{
 		position: absolute;
 		top:0;
@@ -248,6 +256,48 @@ footer{
 		font-size: 30px;
 		line-height: 30px;
 	}
+	/*christmas update*/
+	#youtubeHover{
+		display: none;
+	}
+	#youtube:hover #youtubeHover{
+		display: inline-block;
+		position: absolute;
+		background: url('../images/botube.png') center / cover;
+		width: 240px;
+		height: 160px;
+		top: 80px;
+	}
+	#header{
+		background: url('../images/pepesanta2.jpg') center / cover;
+		width: 70%;
+		height: 650px;
+		float: none;
+	}
+	#header:hover{
+		animation: shake 0.35s cubic-bezier(.36,.07,.19,.97) both;
+		animation-iteration-count: infinite;
+		transform: translate3d(0, 0, 0);
+		backface-visibility: hidden;
+		perspective: 1000px;
+	}
+	@keyframes shake {
+		10%, 90% {
+			transform: translate3d(-1px, 1px, 0);
+		}
+	
+		20%, 80% {
+			transform: translate3d(2px, -3px, 0);
+		}
+	
+		30%, 50%, 70% {
+			transform: translate3d(-3px, 2px, 0);
+		}
+	
+		40%, 60% {
+			transform: translate3d(3px, -1px, 0);
+		}
+	}
 }
 
 @media all and (min-width:980px){
@@ -259,4 +309,5 @@ footer{
 		width: 900px;
 		min-width: 500px;
 	}
+	/*christmas update*/
 }
