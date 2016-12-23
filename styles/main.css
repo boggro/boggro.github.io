@@ -233,6 +233,12 @@ footer{
 		bottom: 0;
 	}
 	*/
+	body{
+		background: url('../images/joyeux-noel-695573.jpg'), url('../images/large.gif');
+		background-repeat: no-repeat, no-repeat;
+		background-position: bottom left, bottom right;
+		background-attachment: fixed, fixed;
+	}
 	#linkWrap{
 		position: absolute;
 		top:0;
