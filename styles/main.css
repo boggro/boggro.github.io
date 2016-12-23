@@ -233,12 +233,7 @@ footer{
 		bottom: 0;
 	}
 	*/
-	body{
-		background: url('../images/joyeux-noel-695573.jpg'), url('../images/large.gif');
-		background-repeat: no-repeat, no-repeat;
-		background-position: bottom left, bottom right;
-		background-attachment: fixed, fixed;
-	}
+	
 	#linkWrap{
 		position: absolute;
 		top:0;
@@ -307,6 +302,7 @@ footer{
 }
 
 @media all and (min-width:980px){
+	
 	#header>h1{
 		font-size: 60px;
 		letter-spacing: 10px;
@@ -316,4 +312,13 @@ footer{
 		min-width: 500px;
 	}
 	/*christmas update*/
+}
+/*christmas update*/
+@media all and (min-width:1480px){
+	body{
+		background: url('../images/joyeux-noel-695573.jpg'), url('../images/large.gif');
+		background-repeat: no-repeat, no-repeat;
+		background-position: bottom left, bottom right;
+		background-attachment: fixed, fixed;
+	}
 }
