@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2016-12-24
+# 2016-12-24 12
 components/angular/angular.min.js
 components/bootstrap-3.3.7-dist/css/bootstrap.css
 components/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff
@@ -18,6 +18,8 @@ images/botube.png
 images/b49.gif
 images/joyeux-noel-695573.jpg
 images/large.gif
+
+sounds/Jingle Bells in Kazoo.mp3
 
 sounds/boggro/그님랭.mp3
 sounds/boggro/대머리 깎아라.mp3

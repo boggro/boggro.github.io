@@ -1,13 +1,17 @@
 (function(){
-	var app = angular.module('Boggro', []);
+	var app = angular.module('Boggro', ['ngAudio']);
 	
-	app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http){
+	app.controller('MainCtrl', ['$scope', '$http', 'ngAudio', function ($scope, $http, ngAudio){
 		var main = this,
 			befAudioId = null;
 		
 		$scope.sounds = [];
 		$scope.isLoaded = [];
 		$scope.col = [];
+
+		//ngAudio
+		$scope.bell = ngAudio.load("sounds/Jingle Bells in Kazoo.mp3");
+		$scope.bell.loop = true;
 
 		(function(){
 			$http.get('sounds.json').success(function (data){
