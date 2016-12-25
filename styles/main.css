@@ -167,15 +167,15 @@ h2>span:last-child{
 }
 .play{
 	/* christmas update
-	background: url('../images/icon_play.png') center / cover;
-	*/
 	background: url('../images/b49.gif') center / cover;
+	*/
+	background: url('../images/icon_play.png') center / cover;
 }
 .pause{
 	/* christmas update
-	background: url('../images/icon_pause.png') center / cover;
-	*/
 	background: url('../images/sadfrogsanta.png') center / cover;
+	*/
+	background: url('../images/icon_pause.png') center / cover;
 }
 
 footer{
@@ -215,7 +215,6 @@ footer{
 }
 
 @media all and (min-width:480px){
-	/* christmas update
 	#header{
 		background: url('../images/Pikachu_vector_by_paperjoey-d3919s82.png') no-repeat;
 		background-position: 30% 0;
@@ -232,6 +231,7 @@ footer{
 		text-align: right;
 		bottom: 0;
 	}
+	/* christmas update
 	*/
 	
 	#linkWrap{
@@ -269,6 +269,7 @@ footer{
 		height: 160px;
 		top: 80px;
 	}
+	/* christmas update
 	#header{
 		background: url('../images/pepesanta2.jpg') center / cover;
 		width: 70%;
@@ -299,6 +300,7 @@ footer{
 			transform: translate3d(3px, -1px, 0);
 		}
 	}
+	*/
 }
 
 @media all and (min-width:980px){
@@ -311,9 +313,9 @@ footer{
 		width: 900px;
 		min-width: 500px;
 	}
-	/*christmas update*/
 }
 /*christmas update*/
+/*
 @media all and (min-width:1480px){
 	body{
 		background: url('../images/joyeux-noel-695573.jpg'), url('../images/large.gif');
@@ -322,3 +324,4 @@ footer{
 		background-attachment: fixed, fixed;
 	}
 }
+*/
