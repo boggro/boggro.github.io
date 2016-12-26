@@ -25,44 +25,124 @@
 	box-sizing: border-box;
 	letter-spacing: 1px;
 }
+a:hover{
+	cursor: pointer;
+}
+
 body{
-	color: #5D5D5D;
+	color: white;
+	background-image: url('../images/b_pad_bg.jpg');
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+
+#background{
+	position: fixed;
+	width: 80%;
+	height: calc(100% - 120px);
+	top: 60px;
+	left: 10%;
+	background-image: url('../images/b_pad_bg.jpg');
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: cover;
+	filter: url('#blur');
+	z-index: -10;
+	filter: blur(7px);
+}
+/*
+#backgroundCover{
+	position: fixed;
+	width: 80%;
+	height: calc(100% - 120px);
+	top: 60px;
+	left: 10%;
+	background: rgba(0,0,0,0.25);
+}
+*/
+#frame{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+.frame{
+	position: absolute;
+	display: inline-block;
+	background-image: url('../images/frame.png');
+	background-position: center top;
+	background-size: cover;
+	width: 75px;
+	height: 75px;
+}
+.frame_1{
+	top: 30px;
+	left: 8%;
+}
+.frame_2{
+	transform: rotate(90deg);
+	top: 30px;
+	right: 8%;
+}
+.frame_3{
+	transform: rotate(180deg);
+	bottom: 30px;
+	right: 8%;
+}
+.frame_4{
+	transform: rotate(270deg);
+	bottom: 30px;
+	left: 8%;
+}
+#w{
+	margin: 0 auto;
+	margin-top: 68px;
+	width: 80%;
+	background: rgba(0,0,0,0.25);
+	padding: 20px 0;
 }
 #wrap{
-	width: 300px;
+	width: 80%;
+	max-width: 900px;
 	margin: 0 auto;
 }
 header{
 	width: 100%;
-	min-height: 40px;
 	position: relative;
 	margin-top: 10px;
+	margin-bottom: 50px;
 }
 header:after{
 	content: "";
 	display: block;
 	clear: both;
 }
-#header{
-	float: left;
+#logo{
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 411px;
+	height: 104px;
+	background: url('../images/logo.png') center / cover;
 }
-#header>h1{
-	font-size: 30px;
-	letter-spacing: 2px;
-	margin: 0;
-	line-height: 40px;
-	text-indent: 20px;
+#logoMin{
+	display: none;
 }
 #linkWrap{
-	float: right;
+	width: 100%;
+	text-align: right;
 }
 #youtube, #potsunet, #asked{
 	display: inline-block;
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: 60px;
 }
 #youtube{
-	background: url('../images/youtube.ico') center / cover;
+	background: url('../images/youtube.png') center / cover;
 }
 #potsunet{
 	background: url('../images/potsu.png') center / cover;	
@@ -89,7 +169,7 @@ section:after{
 	clear: both;
 }
 h2{
-	border-bottom: 2px solid #5D5D5D;
+	border-bottom: 2px solid white;
 	margin-bottom: 10px;
 }
 h2:after{
@@ -109,37 +189,40 @@ h2>span:last-child{
 	vertical-align: middle;
 	float: right;
 }
+
+#mobile{
+	display: none;
+}
+
+.cloud{
+	margin: 0 auto;
+}
 .audioWrap{
 	display: inline-block;
 	position: relative;
-	width: 100px;
-	height: 100px;
-	line-height: 90px;
+	width: 150px;
+	height: 150px;
+	line-height: 140px;
 	text-align: center;
-	background: #FFFF6C;
-	border: 5px solid white;
+	background: rgba(0,0,0,0);
+	border: 5px solid rgba(0,0,0,0);
 	overflow: hidden;
-	color: white;
 	font-weight: bold;
 	float: left;
 }
-.new{
-	position: absolute;
-	display: inline-block;
-	line-height: 10px;
-	right: 0;
-	top: 10px;
-	font-size: 8px;
-	color: #F15F5F;
-	transform: rotate(20deg);
+.audioWrap:hover{
+	cursor: pointer;
+}
+.audioWrap:hover .fileName{
+	color: wheat;
 }
 .fileName{
 	display: inline-block;
 	vertical-align: middle;
-	line-height: 20px;
-	font-size: 20px;
+	line-height: 30px;
+	font-size: 30px;
 	width: 90%;
-	color: #5D5D5D;
+	color: white;
 }
 .audioWrap:hover{
 	border: 0;
@@ -151,7 +234,7 @@ h2>span:last-child{
 	left: 0;
 	bottom: 0;
 	border-radius: 0;
-	background-color: red;
+	background-color: white;
 	opacity: 0.2;
 	margin-bottom: 0;
 }
@@ -166,15 +249,9 @@ h2>span:last-child{
 	opacity: 0.3;
 }
 .play{
-	/* christmas update
-	background: url('../images/b49.gif') center / cover;
-	*/
 	background: url('../images/icon_play.png') center / cover;
 }
 .pause{
-	/* christmas update
-	background: url('../images/sadfrogsanta.png') center / cover;
-	*/
 	background: url('../images/icon_pause.png') center / cover;
 }
 
@@ -182,6 +259,12 @@ footer{
 	text-align: center;
 	border-top: 1px solid black;
 	line-height: 50px;
+	margin-bottom: 50px;
+	color: grey;
+}
+footer a, footer a:visited{
+	color: grey;
+	text-decoration: none;
 }
 
 .panel-collapse{
@@ -214,35 +297,82 @@ footer{
 	cursor: default;
 }
 
-@media all and (min-width:480px){
-	#header{
-		background: url('../images/Pikachu_vector_by_paperjoey-d3919s82.png') no-repeat;
-		background-position: 30% 0;
-		width: 100%;
-		height: 350px;
-		float: none;
+
+@media all and (max-width:980px){
+	#frame{
+		display: none;
 	}
-	#header>h1{
+	.audioWrap{
+		width: 100px;
+		height: 100px;
+		line-height: 90px;
+	}
+	.fileName{
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 20px;
+		font-size: 20px;
+		width: 90%;
+		color: white;
+	}
+}
+@media all and (max-width:600px){
+	.ng-tag-cloud{
+		display: none;
+	}
+	#tag{
+		display: none;
+	}
+	#mobile{
+		display: block;
+	}
+	#w{
+		width: 100%;
+		margin-top: 0;
+	}
+	#logo{
+		display: none;
+	}
+	#logoMin{
+		display: inline-block;
+		color: white;
+		width: 100%;
+		text-align: center;
+	}
+}
+@media all and (max-width:480px){
+	#w{
+		width: 100%;
+		min-width: 380px;
+		margin-top: 0;
+	}
+	#logo{
+		display: none;
+	}
+	#logoMin{
+		display: inline-block;
+		color: white;
+		width: 100%;
+		text-align: center;
+	}
+	
+}
+/*
+
+@media all and (min-width:480px){
+	
+	h1{
 		font-size: 35px;
 		letter-spacing: 5px;
 		width: 100%;
 		height: auto;
-		position: absolute;
-		text-align: right;
-		bottom: 0;
 	}
-	/* christmas update
-	*/
-	
 	#linkWrap{
-		position: absolute;
-		top:0;
-		right: 0;
-		float: none;
 	}
 	#youtube, #potsunet, #asked{
-		width: 80px;
-		height: 80px;
+		margin: 10px;
+		width: 50px;
+		height: 50px;
 	}
 	#wrap{
 		width: 600px;
@@ -257,55 +387,17 @@ footer{
 		font-size: 30px;
 		line-height: 30px;
 	}
-	/*christmas update*/
-	#youtubeHover{
-		display: none;
+	#w{
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 80px;
+		padding: 80px 0;
+		background: rgba(0,0,0,0.25);
 	}
-	#youtube:hover #youtubeHover{
-		display: inline-block;
-		position: absolute;
-		background: url('../images/botube.png') center / cover;
-		width: 240px;
-		height: 160px;
-		top: 80px;
-	}
-	/* christmas update
-	#header{
-		background: url('../images/pepesanta2.jpg') center / cover;
-		width: 70%;
-		height: 650px;
-		float: none;
-	}
-	#header:hover{
-		animation: shake 0.35s cubic-bezier(.36,.07,.19,.97) both;
-		animation-iteration-count: infinite;
-		transform: translate3d(0, 0, 0);
-		backface-visibility: hidden;
-		perspective: 1000px;
-	}
-	@keyframes shake {
-		10%, 90% {
-			transform: translate3d(-1px, 1px, 0);
-		}
-	
-		20%, 80% {
-			transform: translate3d(2px, -3px, 0);
-		}
-	
-		30%, 50%, 70% {
-			transform: translate3d(-3px, 2px, 0);
-		}
-	
-		40%, 60% {
-			transform: translate3d(3px, -1px, 0);
-		}
-	}
-	*/
 }
 
 @media all and (min-width:980px){
-	
-	#header>h1{
+	h1{
 		font-size: 60px;
 		letter-spacing: 10px;
 	}
@@ -313,15 +405,27 @@ footer{
 		width: 900px;
 		min-width: 500px;
 	}
+	#w{
+		width: 980px;
+		margin: 0 auto;
+		padding: 60px 0;
+		background: rgba(255,255,255,0.3);
+	}
 }
-/*christmas update*/
-/*
-@media all and (min-width:1480px){
-	body{
-		background: url('../images/joyeux-noel-695573.jpg'), url('../images/large.gif');
-		background-repeat: no-repeat, no-repeat;
-		background-position: bottom left, bottom right;
-		background-attachment: fixed, fixed;
+@media all and (min-width:1280px){
+	h1{
+		font-size: 60px;
+		letter-spacing: 10px;
+	}
+	#wrap{
+		width: 900px;
+		min-width: 500px;
+	}
+	#w{
+		width: 1200px;
+		margin: 0 auto;
+		padding: 60px 0;
+		background: rgba(189,189,189,0.3);
 	}
 }
 */

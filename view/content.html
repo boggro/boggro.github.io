@@ -1,0 +1,27 @@
+<section id="tag">
+	<h2 ng-if="tag">{{tag}}</h2>
+	<div role="button" id="sounds{{$index + 1}}" class="audioWrap" ng-click="content.play($event)" ng-repeat="file in sounds">
+		<span class="fileName ya">{{file.name}}</span>
+		<audio class="sounds{{$index + 1}}" ng-src="{{'sounds/'+file.name+'.mp3'}}" preload="auto"></audio>
+		<div class="sounds_{{$index + 1}} progress"></div>
+		<div class="icon"></div>
+	</div>
+</section>
+<section>
+	<h2>New</h2>
+	<div role="button" id="newSounds{{$index + 1}}" class="audioWrap" ng-if="file.new" ng-click="content.play($event)" ng-repeat="file in newSounds">
+		<span class="fileName ya">{{file.name}}</span>
+		<audio class="newSounds{{$index + 1}}" ng-src="{{'sounds/'+file.name+'.mp3'}}" preload="auto"></audio>
+		<div class="newSounds_{{$index + 1}} progress"></div>
+		<div class="icon"></div>
+	</div>
+</section>
+<section id="mobile">
+	<h2>All</h2>
+	<div role="button" id="mobSounds{{$index + 1}}" ng-if="!file.new" class="audioWrap" ng-click="content.play($event)" ng-repeat="file in mob">
+		<span class="fileName ya">{{file.name}}</span>
+		<audio class="mobSounds{{$index + 1}}" ng-src="{{'sounds/'+file.name+'.mp3'}}" preload="metadata"></audio>
+		<div class="mobSounds_{{$index + 1}} progress"></div>
+		<div class="icon"></div>
+	</div>
+</section>

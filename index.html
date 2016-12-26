@@ -3,43 +3,53 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-	<meta name="keywords" content="보듬, bodeum, 보그로, boggro, 빻듬">
-	<meta name="description" content="보듬 목소리 자판기, 보그로 자판기, 보듬이의 어그로력을 간편하게 느껴보자!">
-	<title>보그로</title>
+	<meta name="keywords" content="보듬, bodeum, 보듬의 숲, 보그로">
+	<meta name="description" content="보듬의 숲, 보듬 목소리 자판기, 보그로 자판기, 보듬이의 어그로력을 간편하게 느껴보자!">
+	<title>보듬의 숲</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-	<link rel="stylesheet" href="components/bootstrap-3.3.7-dist/css/bootstrap.css">
 	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/ng-tag-cloud.css">
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
-<body ng-controller="MainCtrl as main"	class="noto">
-	<div id="wrap">
-		<div id="snowflakeContainer">
-			<p class="snowflake">*</p>
+<body ng-controller="MainCtrl as main" class="noto">
+	<div id="background"></div>
+	<div id="backgroundCover"></div>
+	<div id="w">
+		<div id="wrap">
+			<header class="hal">
+				<div id="linkWrap">
+					<a id="youtube" title="유튜브" href="https://www.youtube.com/channel/UCVH8OdsMc-xnopAr8Fowu8w" target="_blank"></a>
+					<a id="potsunet" title="팟수넷 보듬 게시판" href="http://potsu.net/index.php?mid=bod" target="_blank"></a>
+					<a id="asked" title="asked" href="http://asked.kr/bodeum" target="_blank"></a>
+				</div>
+				<a href="/"><div id="logo"></div></a>
+				<a href="/"><div id="logoMin"><h1>보듬의 숲</h1></div></a>
+			</header>
+			<ng-tag-cloud cloud-data="data" class="cloud"></ng-tag-cloud>
+			<div ui-view="content"></div>
+			<footer>
+				<span>깃허브 : </span><a href="https://github.com/boggro/boggro.github.io" target="_blank">https://github.com/boggro/boggro.github.io</a>
+			</footer>
+			
 		</div>
-		<header class="hal">
-			<div id="header"><h1>BOGGRO</h1></div>
-			<div id="linkWrap">
-				<a id="youtube" title="유튜브" href="https://www.youtube.com/channel/UCVH8OdsMc-xnopAr8Fowu8w" target="_blank"><div id="youtubeHover"></div></a>
-				<a id="potsunet" title="팟수넷 보듬 게시판" href="http://potsu.net/index.php?mid=bod" target="_blank"></a>
-				<a id="asked" title="asked" href="http://asked.kr/bodeum" target="_blank"></a>
-			</div>
-		</header>
-		<article>
-			<section id="{{sound._id}}" ng-repeat="sound in sounds">
-				<h2 ng-click="main.collapse($event, $index)" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse_{{$index}}" aria-controls="collapse_{{$index}}">{{sound.title}}<span class="{{sound.new ? '' : 'hidden'}}">NEW</span><span class="glyphicon glyphicon-triangle-bottom"></span></h2>
-				<div id="collapse_{{$index}}" class="panel-collapse collapse" role="tabpanel" data-sound="sound" data-cl="col" data-ready="isReady"data-main="main" template-url="contentUrl" coll></div>
-			</section>
-		</article>
-		<footer>
-			<span>깃허브 : </span><a href="https://github.com/boggro/boggro.github.io" target="_blank">https://github.com/boggro/boggro.github.io</a>
-		</footer>
 	</div>
+	<div id="frame">
+		<div class="frame frame_1"></div>
+		<div class="frame frame_2"></div>
+		<div class="frame frame_3"></div>
+		<div class="frame frame_4"></div>
+	</div>
+	<!--<div id="snowflakeContainer">
+		<p class="snowflake">*</p>
+	</div>-->
 	<script src="scripts/google_analytics.js"></script>
 	<script src="components/jquery/jquery-3.1.1.min.js"></script>
-	<script src="components/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 	<script src="components/angular/angular.min.js"></script>
-	<script src="components/angular/angular.audio.js"></script>
+	<script src="components/angular/angular-ui-router.js"></script>
+	<script src="components/angular/angular-scroll.js"></script>
+	<script src="components/angular/ng-tag-cloud.js"></script>
+	<script src="components/underscore.js"></script>
 	<script src="scripts/app.js"></script>
-	<script src="scripts/fallingsnow_v6.js"></script>
+	<!--<script src="scripts/fallingsnow_v6.js"></script>-->
 </body>
 </html>
