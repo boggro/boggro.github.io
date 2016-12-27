@@ -5,21 +5,11 @@
 		['$stateProvider', '$locationProvider',
 			function($stateProvider, $locationProvider){
 				$locationProvider.html5Mode({
-					enabled: false,
+					enabled: true,
 					requireBase: false
 				});
 				$stateProvider
 					.state('/', {
-						url:'',
-						views: {
-							'content': {
-								templateUrl: 'view/content.html',
-								controller: 'contentCtrl',
-								controllerAs: 'content'
-							}
-						}
-					})
-					.state('tag', {
 						url:'/:tags',
 						views: {
 							'content': {
