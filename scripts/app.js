@@ -28,7 +28,7 @@
 			if(toParams.tags !== ""){
 				var elem = angular.element('#tag');
 				if(elem !== null){
-					angular.element(document).scrollToElementAnimated(elem);
+					angular.element(document).scrollToElementAnimated(elem, 60);
 				}
 			}
 		});
