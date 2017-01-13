@@ -28,16 +28,16 @@ div.ng-tag-cloud { color: #09f; }
 div.ng-tag-cloud a { color: inherit; }
 div.ng-tag-cloud a:hover { color: #FFFFFF; }
 div.ng-tag-cloud a:hover { color: #FFFFFF; }
-div.ng-tag-cloud span.w10 { color: #BDBDBD; }
-div.ng-tag-cloud span.w9 { color: #BDBDBD; }
-div.ng-tag-cloud span.w8 { color: #BDBDBD; }
-div.ng-tag-cloud span.w7 { color: #BDBDBD; }
-div.ng-tag-cloud span.w6 { color: #BDBDBD; }
-div.ng-tag-cloud span.w5 { color: #BDBDBD; }
-div.ng-tag-cloud span.w4 { color: #BDBDBD; }
-div.ng-tag-cloud span.w3 { color: #BDBDBD; }
-div.ng-tag-cloud span.w2 { color: #BDBDBD; }
-div.ng-tag-cloud span.w1 { color: #BDBDBD; }
+div.ng-tag-cloud span.w10 { color: #747474; }
+div.ng-tag-cloud span.w9 { color: #747474; }
+div.ng-tag-cloud span.w8 { color: #747474; }
+div.ng-tag-cloud span.w7 { color: #747474; }
+div.ng-tag-cloud span.w6 { color: #747474; }
+div.ng-tag-cloud span.w5 { color: #747474; }
+div.ng-tag-cloud span.w4 { color: #747474; }
+div.ng-tag-cloud span.w3 { color: #747474; }
+div.ng-tag-cloud span.w2 { color: #747474; }
+div.ng-tag-cloud span.w1 { color: #747474; }
 
 /* layout */
 

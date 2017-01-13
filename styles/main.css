@@ -31,7 +31,7 @@ a:hover{
 
 body{
 	color: white;
-	background-image: url('../images/b_pad_bg.jpg');
+	background-image: url('../images/winter.jpg');
 	background-position: center top;
 	background-attachment: fixed;
 	background-size: cover;
@@ -45,7 +45,7 @@ body{
 	height: calc(100% - 120px);
 	top: 60px;
 	left: 10%;
-	background-image: url('../images/b_pad_bg.jpg');
+	background-image: url('../images/winter.jpg');
 	background-position: center top;
 	background-attachment: fixed;
 	background-size: cover;
@@ -289,7 +289,7 @@ footer a, footer a:visited{
 	font-size: 14px;
 	line-height: 24px;
 	position: fixed;
-	color: #B2EBF4;
+	color: white/*#B2EBF4*/;
 	user-select: none;
 	z-index: 1000;
 }
