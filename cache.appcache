@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2017-01-013
+# 2017-01-015
 components/angular/angular.min.js
 components/angular/angular-scroll.js
 components/angular/angular-ui-router.js
@@ -57,11 +57,10 @@ sounds/직빵.mp3
 sounds/템주다가ㅏㅏㅏ으앙.mp3
 sounds/이빨에 고기꼈듬.mp3
 sounds/쿠움척.mp3
-sounds/해피나루.mp3
 sounds/왜 이렇게 안 죽어.mp3
 sounds/Do you know.mp3
-sounds/자라났어 오늘도.mp3
 sounds/콘치즈 ASMR.mp3
+sounds/너의 이름은.mp3
 
 sounds/팟빵1.mp3
 sounds/팟빵2.mp3
@@ -74,7 +73,11 @@ sounds/포켓몬스터.mp3
 sounds/푸린.mp3
 sounds/히오스.mp3
 sounds/머머리 헌정곡.mp3
+sounds/해피나루.mp3
 sounds/We wish you a merry Christmas.mp3
+sounds/자라났어 오늘도.mp3
+sounds/남극탐험.mp3
+sounds/내 고향 충청도.mp3
 
 sounds/보트박스.mp3
 sounds/승리의 보트박스.mp3
