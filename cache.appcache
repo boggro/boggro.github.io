@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2017-01-19
+# 2017-01-22
 components/angular/angular.min.js
 components/angular/angular-scroll.js
 components/angular/angular-ui-router.js
@@ -78,6 +78,7 @@ sounds/We wish you a merry Christmas.mp3
 sounds/자라났어 오늘도.mp3
 sounds/망극탐험.mp3
 sounds/내 고향 충청도.mp3
+sounds/가을 우체국 앞에서.mp3
 
 sounds/보트박스.mp3
 sounds/승리의 보트박스.mp3
